@@ -1,0 +1,14 @@
+<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 300px; border-style: solid; padding: 20px">
+  <div>
+    <div class="form-group">
+      <label for="loginEmail">Email address</label>
+      <input type="email" class="form-control" name="loginEmail" aria-describedby="emailHelp"
+        placeholder="Enter email..." [(ngModel)]="loginEmail" >
+    </div>
+    <div class="form-group" style="margin-top: 20px">
+      <label for="loginPassword">Password</label>
+      <input type="password" class="form-control" name="loginPassword" placeholder="Enter password..." [(ngModel)]="loginPassword">
+    </div>
+    <button class="btn btn-primary" style="margin-top: 20px" (click)="onLoginSubmit()">Submit</button>
+  </div>
+</div>
