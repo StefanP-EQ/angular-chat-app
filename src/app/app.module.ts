@@ -9,7 +9,7 @@ import { ChatLobbyComponent } from './_components/chat-lobby/chat-lobby.componen
 import { HeaderComponent } from './_components/header/header.component';
 import { AuthenticationService } from './_services/authentication.service';
 import { ChatRoomComponent } from './_components/chat-room/chat-room.component';
-
+import { LoggerService } from './_services/logger.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,7 @@ import { ChatRoomComponent } from './_components/chat-room/chat-room.component';
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
 export interface AuthenticationType {
-  name: String;
-  password: String;
+  name: string;
+  password: string;
 }

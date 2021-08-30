@@ -11,8 +11,11 @@ export class AuthenticationService {
 
   }
 
-  signIn(account: AuthenticationType) {
+  signIn(account: AuthenticationType): Boolean {
     this.logger.log("Signing in...");
+    //login logic
+    localStorage.setItem('user', account.name);
+    return true;
   }
 
   signOut() {

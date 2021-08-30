@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthenticationService } from './_services/authentication.service';
+import { LoggerService } from './_services/logger.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,14 @@ import { AuthenticationService } from './_services/authentication.service';
 })
 export class AppComponent{
 
-  username: String = "";
+  name: String = "";
 
-  constructor(private authService: AuthenticationService) {
+  constructor(private logger: LoggerService) {
 
+  }
+
+  succesfulLogin(name: String) {
+    this.logger.log("Succesful login for: " + name);
   }
 
 }
