@@ -12,7 +12,6 @@ export class AppComponent{
   name: String = "";
 
   constructor(private logger: LoggerService) {
-
   }
 
   succesfulLogin(name: String) {
